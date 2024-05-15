@@ -20,15 +20,16 @@ const Note: React.FC<NoteProps> = ({ note, deleteNote }) => {
         }}
       >
         <CardContent sx={{ flex: "1 1 auto", overflow: "auto" }}>
-          <Typography variant="h6" sx={{ marginBottom: "10px" }}>
+          <Typography variant="h5" sx={{ marginBottom: "10px" }}>
             {note.title}
           </Typography>
-          <Typography sx={{ marginBottom: "20px" }} variant="body2">
-            {note.details}
-          </Typography>
-          <Typography variant="caption" color="text.secondary">
+          <Typography sx={{ fontSize: "16px" }}>{note.details}</Typography>
+          <br />
+          <Typography variant="body2" color="text.secondary">
             {note.date}
           </Typography>
+
+          <br />
         </CardContent>
         <Button
           variant="contained"
