@@ -19,7 +19,13 @@ const Note: React.FC<NoteProps> = ({ note, deleteNote }) => {
           flexDirection: "column",
         }}
       >
-        <CardContent sx={{ flex: "1 1 auto", overflow: "auto" }}>
+        <CardContent
+          sx={{
+            flex: "1 1 auto",
+            overflowY: "auto",
+            "&::-webkit-scrollbar": { display: "none" },
+          }}
+        >
           <Typography variant="h5" sx={{ marginBottom: "10px" }}>
             {note.title}
           </Typography>

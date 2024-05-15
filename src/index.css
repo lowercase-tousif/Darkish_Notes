@@ -7,3 +7,6 @@
 .my {
   color: cornflowerblue;
 }
+-webkit::-webkit-scrollbar {
+  display: none;
+}
